@@ -12,7 +12,7 @@ if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE "Debug")
 endif()
 
-set(CMAKE_PROJECT_NAME devcontainer-stm32-cubemx-clean)
+set(CMAKE_PROJECT_NAME devcontainer-stm32-cubemx-vl53l0x)
 
 include("cmake/gcc-arm-none-eabi.cmake")
 
@@ -38,6 +38,9 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     "Core/Src/sysmem.c"
     "Core/Src/syscalls.c"
     "Core/Src/main.cpp"
+    "Core/Src/i2c.c"
+    "Core/Src/gpio.c"
+    "Core/Src/usart.c"
 )
 
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE

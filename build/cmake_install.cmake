@@ -1,4 +1,4 @@
-# Install script for directory: /home/franek/Documents/STM32/devcontainer-stm32-cubemx-nucleo-l476xx-clean
+# Install script for directory: /home/franek/Documents/STM32/devcontainer-stm32-cubemx-vl53l0x
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/franek/Documents/STM32/devcontainer-stm32-cubemx-nucleo-l476xx-clean/build/cmake/stm32cubemx/cmake_install.cmake")
+  include("/home/franek/Documents/STM32/devcontainer-stm32-cubemx-vl53l0x/build/cmake/stm32cubemx/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/franek/Documents/STM32/devcontainer-stm32-cubemx-nucleo-l476xx-clean/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/franek/Documents/STM32/devcontainer-stm32-cubemx-vl53l0x/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

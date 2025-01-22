@@ -57,10 +57,10 @@ RM = /home/franek/st/stm32cubeclt_1.17.0_2/CMake/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/franek/Documents/STM32/devcontainer-stm32-cubemx-nucleo-l476xx-clean
+CMAKE_SOURCE_DIR = /home/franek/Documents/STM32/devcontainer-stm32-cubemx-vl53l0x
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/franek/Documents/STM32/devcontainer-stm32-cubemx-nucleo-l476xx-clean/build
+CMAKE_BINARY_DIR = /home/franek/Documents/STM32/devcontainer-stm32-cubemx-vl53l0x/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/franek/Documents/STM32/devcontainer-stm32-cubemx-nucleo-l476xx-clean/build/CMakeFiles /home/franek/Documents/STM32/devcontainer-stm32-cubemx-nucleo-l476xx-clean/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/franek/Documents/STM32/devcontainer-stm32-cubemx-vl53l0x/build/CMakeFiles /home/franek/Documents/STM32/devcontainer-stm32-cubemx-vl53l0x/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/franek/Documents/STM32/devcontainer-stm32-cubemx-nucleo-l476xx-clean/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/franek/Documents/STM32/devcontainer-stm32-cubemx-vl53l0x/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,24 +117,72 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named devcontainer-stm32-cubemx-clean
+# Target rules for targets named devcontainer-stm32-cubemx-vl53l0x
 
 # Build rule for target.
-devcontainer-stm32-cubemx-clean: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 devcontainer-stm32-cubemx-clean
-.PHONY : devcontainer-stm32-cubemx-clean
+devcontainer-stm32-cubemx-vl53l0x: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 devcontainer-stm32-cubemx-vl53l0x
+.PHONY : devcontainer-stm32-cubemx-vl53l0x
 
 # fast build rule for target.
-devcontainer-stm32-cubemx-clean/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build
-.PHONY : devcontainer-stm32-cubemx-clean/fast
+devcontainer-stm32-cubemx-vl53l0x/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build
+.PHONY : devcontainer-stm32-cubemx-vl53l0x/fast
+
+Core/Src/gpio.obj: Core/Src/gpio.c.obj
+.PHONY : Core/Src/gpio.obj
+
+# target to build an object file
+Core/Src/gpio.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Core/Src/gpio.c.obj
+.PHONY : Core/Src/gpio.c.obj
+
+Core/Src/gpio.i: Core/Src/gpio.c.i
+.PHONY : Core/Src/gpio.i
+
+# target to preprocess a source file
+Core/Src/gpio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Core/Src/gpio.c.i
+.PHONY : Core/Src/gpio.c.i
+
+Core/Src/gpio.s: Core/Src/gpio.c.s
+.PHONY : Core/Src/gpio.s
+
+# target to generate assembly for a file
+Core/Src/gpio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Core/Src/gpio.c.s
+.PHONY : Core/Src/gpio.c.s
+
+Core/Src/i2c.obj: Core/Src/i2c.c.obj
+.PHONY : Core/Src/i2c.obj
+
+# target to build an object file
+Core/Src/i2c.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Core/Src/i2c.c.obj
+.PHONY : Core/Src/i2c.c.obj
+
+Core/Src/i2c.i: Core/Src/i2c.c.i
+.PHONY : Core/Src/i2c.i
+
+# target to preprocess a source file
+Core/Src/i2c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Core/Src/i2c.c.i
+.PHONY : Core/Src/i2c.c.i
+
+Core/Src/i2c.s: Core/Src/i2c.c.s
+.PHONY : Core/Src/i2c.s
+
+# target to generate assembly for a file
+Core/Src/i2c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Core/Src/i2c.c.s
+.PHONY : Core/Src/i2c.c.s
 
 Core/Src/main.obj: Core/Src/main.cpp.obj
 .PHONY : Core/Src/main.obj
 
 # target to build an object file
 Core/Src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Core/Src/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Core/Src/main.cpp.obj
 .PHONY : Core/Src/main.cpp.obj
 
 Core/Src/main.i: Core/Src/main.cpp.i
@@ -142,7 +190,7 @@ Core/Src/main.i: Core/Src/main.cpp.i
 
 # target to preprocess a source file
 Core/Src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Core/Src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Core/Src/main.cpp.i
 .PHONY : Core/Src/main.cpp.i
 
 Core/Src/main.s: Core/Src/main.cpp.s
@@ -150,7 +198,7 @@ Core/Src/main.s: Core/Src/main.cpp.s
 
 # target to generate assembly for a file
 Core/Src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Core/Src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Core/Src/main.cpp.s
 .PHONY : Core/Src/main.cpp.s
 
 Core/Src/stm32l4xx_hal_msp.obj: Core/Src/stm32l4xx_hal_msp.c.obj
@@ -158,7 +206,7 @@ Core/Src/stm32l4xx_hal_msp.obj: Core/Src/stm32l4xx_hal_msp.c.obj
 
 # target to build an object file
 Core/Src/stm32l4xx_hal_msp.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Core/Src/stm32l4xx_hal_msp.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Core/Src/stm32l4xx_hal_msp.c.obj
 .PHONY : Core/Src/stm32l4xx_hal_msp.c.obj
 
 Core/Src/stm32l4xx_hal_msp.i: Core/Src/stm32l4xx_hal_msp.c.i
@@ -166,7 +214,7 @@ Core/Src/stm32l4xx_hal_msp.i: Core/Src/stm32l4xx_hal_msp.c.i
 
 # target to preprocess a source file
 Core/Src/stm32l4xx_hal_msp.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Core/Src/stm32l4xx_hal_msp.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Core/Src/stm32l4xx_hal_msp.c.i
 .PHONY : Core/Src/stm32l4xx_hal_msp.c.i
 
 Core/Src/stm32l4xx_hal_msp.s: Core/Src/stm32l4xx_hal_msp.c.s
@@ -174,7 +222,7 @@ Core/Src/stm32l4xx_hal_msp.s: Core/Src/stm32l4xx_hal_msp.c.s
 
 # target to generate assembly for a file
 Core/Src/stm32l4xx_hal_msp.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Core/Src/stm32l4xx_hal_msp.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Core/Src/stm32l4xx_hal_msp.c.s
 .PHONY : Core/Src/stm32l4xx_hal_msp.c.s
 
 Core/Src/stm32l4xx_it.obj: Core/Src/stm32l4xx_it.c.obj
@@ -182,7 +230,7 @@ Core/Src/stm32l4xx_it.obj: Core/Src/stm32l4xx_it.c.obj
 
 # target to build an object file
 Core/Src/stm32l4xx_it.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Core/Src/stm32l4xx_it.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Core/Src/stm32l4xx_it.c.obj
 .PHONY : Core/Src/stm32l4xx_it.c.obj
 
 Core/Src/stm32l4xx_it.i: Core/Src/stm32l4xx_it.c.i
@@ -190,7 +238,7 @@ Core/Src/stm32l4xx_it.i: Core/Src/stm32l4xx_it.c.i
 
 # target to preprocess a source file
 Core/Src/stm32l4xx_it.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Core/Src/stm32l4xx_it.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Core/Src/stm32l4xx_it.c.i
 .PHONY : Core/Src/stm32l4xx_it.c.i
 
 Core/Src/stm32l4xx_it.s: Core/Src/stm32l4xx_it.c.s
@@ -198,7 +246,7 @@ Core/Src/stm32l4xx_it.s: Core/Src/stm32l4xx_it.c.s
 
 # target to generate assembly for a file
 Core/Src/stm32l4xx_it.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Core/Src/stm32l4xx_it.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Core/Src/stm32l4xx_it.c.s
 .PHONY : Core/Src/stm32l4xx_it.c.s
 
 Core/Src/syscalls.obj: Core/Src/syscalls.c.obj
@@ -206,7 +254,7 @@ Core/Src/syscalls.obj: Core/Src/syscalls.c.obj
 
 # target to build an object file
 Core/Src/syscalls.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Core/Src/syscalls.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Core/Src/syscalls.c.obj
 .PHONY : Core/Src/syscalls.c.obj
 
 Core/Src/syscalls.i: Core/Src/syscalls.c.i
@@ -214,7 +262,7 @@ Core/Src/syscalls.i: Core/Src/syscalls.c.i
 
 # target to preprocess a source file
 Core/Src/syscalls.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Core/Src/syscalls.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Core/Src/syscalls.c.i
 .PHONY : Core/Src/syscalls.c.i
 
 Core/Src/syscalls.s: Core/Src/syscalls.c.s
@@ -222,7 +270,7 @@ Core/Src/syscalls.s: Core/Src/syscalls.c.s
 
 # target to generate assembly for a file
 Core/Src/syscalls.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Core/Src/syscalls.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Core/Src/syscalls.c.s
 .PHONY : Core/Src/syscalls.c.s
 
 Core/Src/sysmem.obj: Core/Src/sysmem.c.obj
@@ -230,7 +278,7 @@ Core/Src/sysmem.obj: Core/Src/sysmem.c.obj
 
 # target to build an object file
 Core/Src/sysmem.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Core/Src/sysmem.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Core/Src/sysmem.c.obj
 .PHONY : Core/Src/sysmem.c.obj
 
 Core/Src/sysmem.i: Core/Src/sysmem.c.i
@@ -238,7 +286,7 @@ Core/Src/sysmem.i: Core/Src/sysmem.c.i
 
 # target to preprocess a source file
 Core/Src/sysmem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Core/Src/sysmem.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Core/Src/sysmem.c.i
 .PHONY : Core/Src/sysmem.c.i
 
 Core/Src/sysmem.s: Core/Src/sysmem.c.s
@@ -246,7 +294,7 @@ Core/Src/sysmem.s: Core/Src/sysmem.c.s
 
 # target to generate assembly for a file
 Core/Src/sysmem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Core/Src/sysmem.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Core/Src/sysmem.c.s
 .PHONY : Core/Src/sysmem.c.s
 
 Core/Src/system_clock.obj: Core/Src/system_clock.c.obj
@@ -254,7 +302,7 @@ Core/Src/system_clock.obj: Core/Src/system_clock.c.obj
 
 # target to build an object file
 Core/Src/system_clock.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Core/Src/system_clock.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Core/Src/system_clock.c.obj
 .PHONY : Core/Src/system_clock.c.obj
 
 Core/Src/system_clock.i: Core/Src/system_clock.c.i
@@ -262,7 +310,7 @@ Core/Src/system_clock.i: Core/Src/system_clock.c.i
 
 # target to preprocess a source file
 Core/Src/system_clock.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Core/Src/system_clock.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Core/Src/system_clock.c.i
 .PHONY : Core/Src/system_clock.c.i
 
 Core/Src/system_clock.s: Core/Src/system_clock.c.s
@@ -270,7 +318,7 @@ Core/Src/system_clock.s: Core/Src/system_clock.c.s
 
 # target to generate assembly for a file
 Core/Src/system_clock.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Core/Src/system_clock.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Core/Src/system_clock.c.s
 .PHONY : Core/Src/system_clock.c.s
 
 Core/Src/system_stm32l4xx.obj: Core/Src/system_stm32l4xx.c.obj
@@ -278,7 +326,7 @@ Core/Src/system_stm32l4xx.obj: Core/Src/system_stm32l4xx.c.obj
 
 # target to build an object file
 Core/Src/system_stm32l4xx.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Core/Src/system_stm32l4xx.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Core/Src/system_stm32l4xx.c.obj
 .PHONY : Core/Src/system_stm32l4xx.c.obj
 
 Core/Src/system_stm32l4xx.i: Core/Src/system_stm32l4xx.c.i
@@ -286,7 +334,7 @@ Core/Src/system_stm32l4xx.i: Core/Src/system_stm32l4xx.c.i
 
 # target to preprocess a source file
 Core/Src/system_stm32l4xx.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Core/Src/system_stm32l4xx.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Core/Src/system_stm32l4xx.c.i
 .PHONY : Core/Src/system_stm32l4xx.c.i
 
 Core/Src/system_stm32l4xx.s: Core/Src/system_stm32l4xx.c.s
@@ -294,15 +342,39 @@ Core/Src/system_stm32l4xx.s: Core/Src/system_stm32l4xx.c.s
 
 # target to generate assembly for a file
 Core/Src/system_stm32l4xx.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Core/Src/system_stm32l4xx.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Core/Src/system_stm32l4xx.c.s
 .PHONY : Core/Src/system_stm32l4xx.c.s
+
+Core/Src/usart.obj: Core/Src/usart.c.obj
+.PHONY : Core/Src/usart.obj
+
+# target to build an object file
+Core/Src/usart.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Core/Src/usart.c.obj
+.PHONY : Core/Src/usart.c.obj
+
+Core/Src/usart.i: Core/Src/usart.c.i
+.PHONY : Core/Src/usart.i
+
+# target to preprocess a source file
+Core/Src/usart.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Core/Src/usart.c.i
+.PHONY : Core/Src/usart.c.i
+
+Core/Src/usart.s: Core/Src/usart.c.s
+.PHONY : Core/Src/usart.s
+
+# target to generate assembly for a file
+Core/Src/usart.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Core/Src/usart.c.s
+.PHONY : Core/Src/usart.c.s
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.obj: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.obj
 
 # target to build an object file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.i: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.i
@@ -310,7 +382,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.i: Drivers/STM32L4xx_HAL_Driver/S
 
 # target to preprocess a source file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.i
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.i
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.s: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.s
@@ -318,7 +390,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.s: Drivers/STM32L4xx_HAL_Driver/S
 
 # target to generate assembly for a file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.s
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.s
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.obj: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
@@ -326,7 +398,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.obj: Drivers/STM32L4xx_HAL
 
 # target to build an object file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.i: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.i
@@ -334,7 +406,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.i: Drivers/STM32L4xx_HAL_D
 
 # target to preprocess a source file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.i
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.i
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.s: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.s
@@ -342,7 +414,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.s: Drivers/STM32L4xx_HAL_D
 
 # target to generate assembly for a file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.s
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.s
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.obj: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj
@@ -350,7 +422,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.obj: Drivers/STM32L4xx_HAL_Dr
 
 # target to build an object file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.i: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.i
@@ -358,7 +430,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.i: Drivers/STM32L4xx_HAL_Driv
 
 # target to preprocess a source file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.i
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.i
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.s: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.s
@@ -366,7 +438,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.s: Drivers/STM32L4xx_HAL_Driv
 
 # target to generate assembly for a file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.s
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.s
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.obj: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.obj
@@ -374,7 +446,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.obj: Drivers/STM32L4xx_HAL
 
 # target to build an object file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.obj
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.obj
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.i: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.i
@@ -382,7 +454,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.i: Drivers/STM32L4xx_HAL_D
 
 # target to preprocess a source file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.i
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.i
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.s: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.s
@@ -390,7 +462,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.s: Drivers/STM32L4xx_HAL_D
 
 # target to generate assembly for a file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.s
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.s
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.obj: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.obj
@@ -398,7 +470,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.obj: Drivers/STM32L4xx_HAL_D
 
 # target to build an object file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.obj
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.obj
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.i: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.i
@@ -406,7 +478,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.i: Drivers/STM32L4xx_HAL_Dri
 
 # target to preprocess a source file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.i
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.i
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.s: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.s
@@ -414,7 +486,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.s: Drivers/STM32L4xx_HAL_Dri
 
 # target to generate assembly for a file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.s
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.s
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.obj: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.obj
@@ -422,7 +494,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.obj: Drivers/STM32L4xx_HAL_
 
 # target to build an object file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.obj
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.obj
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.i: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.i
@@ -430,7 +502,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.i: Drivers/STM32L4xx_HAL_Dr
 
 # target to preprocess a source file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.i
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.i
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.s: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.s
@@ -438,7 +510,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.s: Drivers/STM32L4xx_HAL_Dr
 
 # target to generate assembly for a file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.s
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.s
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.obj: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.obj
@@ -446,7 +518,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.obj: Drivers/STM32L4xx_H
 
 # target to build an object file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.obj
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.obj
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.i: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.i
@@ -454,7 +526,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.i: Drivers/STM32L4xx_HAL
 
 # target to preprocess a source file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.i
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.i
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.s: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.s
@@ -462,7 +534,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.s: Drivers/STM32L4xx_HAL
 
 # target to generate assembly for a file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.s
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.s
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.obj: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.obj
@@ -470,7 +542,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.obj: Drivers/STM32L
 
 # target to build an object file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.obj
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.obj
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.i: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.i
@@ -478,7 +550,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.i: Drivers/STM32L4x
 
 # target to preprocess a source file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.i
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.i
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.s: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.s
@@ -486,7 +558,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.s: Drivers/STM32L4x
 
 # target to generate assembly for a file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.s
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.s
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.obj: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
@@ -494,7 +566,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.obj: Drivers/STM32L4xx_HAL_D
 
 # target to build an object file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.i: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.i
@@ -502,7 +574,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.i: Drivers/STM32L4xx_HAL_Dri
 
 # target to preprocess a source file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.i
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.i
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.s: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.s
@@ -510,7 +582,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.s: Drivers/STM32L4xx_HAL_Dri
 
 # target to generate assembly for a file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.s
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.s
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.obj: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
@@ -518,7 +590,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.obj: Drivers/STM32L4xx_HAL_Dr
 
 # target to build an object file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.i: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.i
@@ -526,7 +598,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.i: Drivers/STM32L4xx_HAL_Driv
 
 # target to preprocess a source file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.i
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.i
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.s: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.s
@@ -534,7 +606,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.s: Drivers/STM32L4xx_HAL_Driv
 
 # target to generate assembly for a file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.s
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.s
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.obj: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj
@@ -542,7 +614,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.obj: Drivers/STM32L4xx_HAL
 
 # target to build an object file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.i: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.i
@@ -550,7 +622,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.i: Drivers/STM32L4xx_HAL_D
 
 # target to preprocess a source file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.i
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.i
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.s: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.s
@@ -558,7 +630,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.s: Drivers/STM32L4xx_HAL_D
 
 # target to generate assembly for a file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.s
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.s
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.obj: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.obj
@@ -566,7 +638,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.obj: Drivers/STM32L4xx_HAL_Dr
 
 # target to build an object file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.obj
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.obj
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.i: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.i
@@ -574,7 +646,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.i: Drivers/STM32L4xx_HAL_Driv
 
 # target to preprocess a source file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.i
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.i
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.s: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.s
@@ -582,7 +654,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.s: Drivers/STM32L4xx_HAL_Driv
 
 # target to generate assembly for a file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.s
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.s
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.obj: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
@@ -590,7 +662,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.obj: Drivers/STM32L4xx_HAL
 
 # target to build an object file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.i: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.i
@@ -598,7 +670,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.i: Drivers/STM32L4xx_HAL_D
 
 # target to preprocess a source file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.i
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.i
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.s: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.s
@@ -606,7 +678,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.s: Drivers/STM32L4xx_HAL_D
 
 # target to generate assembly for a file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.s
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.s
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.obj: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
@@ -614,7 +686,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.obj: Drivers/STM32L4xx_HAL_Dr
 
 # target to build an object file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.i: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.i
@@ -622,7 +694,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.i: Drivers/STM32L4xx_HAL_Driv
 
 # target to preprocess a source file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.i
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.i
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.s: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.s
@@ -630,7 +702,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.s: Drivers/STM32L4xx_HAL_Driv
 
 # target to generate assembly for a file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.s
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.s
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.obj: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
@@ -638,7 +710,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.obj: Drivers/STM32L4xx_HAL
 
 # target to build an object file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.i: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.i
@@ -646,7 +718,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.i: Drivers/STM32L4xx_HAL_D
 
 # target to preprocess a source file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.i
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.i
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.s: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.s
@@ -654,63 +726,15 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.s: Drivers/STM32L4xx_HAL_D
 
 # target to generate assembly for a file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.s
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.s
-
-Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.obj: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c.obj
-.PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.obj
-
-# target to build an object file
-Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c.obj
-.PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c.obj
-
-Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.i: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c.i
-.PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.i
-
-# target to preprocess a source file
-Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c.i
-.PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c.i
-
-Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.s: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c.s
-.PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.s
-
-# target to generate assembly for a file
-Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c.s
-.PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c.s
-
-Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.obj: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c.obj
-.PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.obj
-
-# target to build an object file
-Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c.obj
-.PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c.obj
-
-Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.i: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c.i
-.PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.i
-
-# target to preprocess a source file
-Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c.i
-.PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c.i
-
-Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.s: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c.s
-.PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.s
-
-# target to generate assembly for a file
-Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c.s
-.PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c.s
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.obj: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.obj
 
 # target to build an object file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.i: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.i
@@ -718,7 +742,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.i: Drivers/STM32L4xx_HAL_Dri
 
 # target to preprocess a source file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.i
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.i
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.s: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.s
@@ -726,7 +750,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.s: Drivers/STM32L4xx_HAL_Dri
 
 # target to generate assembly for a file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.s
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.s
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.obj: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj
@@ -734,7 +758,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.obj: Drivers/STM32L4xx_HA
 
 # target to build an object file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.i: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.i
@@ -742,7 +766,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.i: Drivers/STM32L4xx_HAL_
 
 # target to preprocess a source file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.i
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.i
 
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.s: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.s
@@ -750,7 +774,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.s: Drivers/STM32L4xx_HAL_
 
 # target to generate assembly for a file
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.s
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.s
 
 startup_stm32l476xx.obj: startup_stm32l476xx.s.obj
@@ -758,7 +782,7 @@ startup_stm32l476xx.obj: startup_stm32l476xx.s.obj
 
 # target to build an object file
 startup_stm32l476xx.s.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-clean.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-clean.dir/startup_stm32l476xx.s.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/build.make CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/startup_stm32l476xx.s.obj
 .PHONY : startup_stm32l476xx.s.obj
 
 # Help Target
@@ -769,7 +793,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... devcontainer-stm32-cubemx-clean"
+	@echo "... devcontainer-stm32-cubemx-vl53l0x"
+	@echo "... Core/Src/gpio.obj"
+	@echo "... Core/Src/gpio.i"
+	@echo "... Core/Src/gpio.s"
+	@echo "... Core/Src/i2c.obj"
+	@echo "... Core/Src/i2c.i"
+	@echo "... Core/Src/i2c.s"
 	@echo "... Core/Src/main.obj"
 	@echo "... Core/Src/main.i"
 	@echo "... Core/Src/main.s"
@@ -791,6 +821,9 @@ help:
 	@echo "... Core/Src/system_stm32l4xx.obj"
 	@echo "... Core/Src/system_stm32l4xx.i"
 	@echo "... Core/Src/system_stm32l4xx.s"
+	@echo "... Core/Src/usart.obj"
+	@echo "... Core/Src/usart.i"
+	@echo "... Core/Src/usart.s"
 	@echo "... Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.obj"
 	@echo "... Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.i"
 	@echo "... Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.s"
@@ -836,12 +869,6 @@ help:
 	@echo "... Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.obj"
 	@echo "... Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.i"
 	@echo "... Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.s"
-	@echo "... Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.obj"
-	@echo "... Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.i"
-	@echo "... Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.s"
-	@echo "... Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.obj"
-	@echo "... Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.i"
-	@echo "... Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.s"
 	@echo "... Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.obj"
 	@echo "... Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.i"
 	@echo "... Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.s"

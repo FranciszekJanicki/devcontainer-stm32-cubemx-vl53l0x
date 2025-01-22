@@ -1,5 +1,5 @@
-/home/franek/Documents/STM32/devcontainer-stm32-cubemx-nucleo-l476xx-clean/build/CMakeFiles/devcontainer-stm32-cubemx-clean.dir
-/home/franek/Documents/STM32/devcontainer-stm32-cubemx-nucleo-l476xx-clean/build/CMakeFiles/edit_cache.dir
-/home/franek/Documents/STM32/devcontainer-stm32-cubemx-nucleo-l476xx-clean/build/CMakeFiles/rebuild_cache.dir
-/home/franek/Documents/STM32/devcontainer-stm32-cubemx-nucleo-l476xx-clean/build/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
-/home/franek/Documents/STM32/devcontainer-stm32-cubemx-nucleo-l476xx-clean/build/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir
+/home/franek/Documents/STM32/devcontainer-stm32-cubemx-vl53l0x/build/CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir
+/home/franek/Documents/STM32/devcontainer-stm32-cubemx-vl53l0x/build/CMakeFiles/edit_cache.dir
+/home/franek/Documents/STM32/devcontainer-stm32-cubemx-vl53l0x/build/CMakeFiles/rebuild_cache.dir
+/home/franek/Documents/STM32/devcontainer-stm32-cubemx-vl53l0x/build/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+/home/franek/Documents/STM32/devcontainer-stm32-cubemx-vl53l0x/build/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir

@@ -67,13 +67,15 @@ void Error_Handler(void);
 #define TCK_GPIO_Port GPIOA
 #define SWO_Pin GPIO_PIN_3
 #define SWO_GPIO_Port GPIOB
-#define MPU_INT_Pin GPIO_PIN_5
-#define MPU_INT_GPIO_Port GPIOB
-#define MPU_INT_EXTI_IRQn EXTI9_5_IRQn
-#define MPU_SCL_Pin GPIO_PIN_6
-#define MPU_SCL_GPIO_Port GPIOB
-#define MPU_SDA_Pin GPIO_PIN_7
-#define MPU_SDA_GPIO_Port GPIOB
+#define VL53L0X_XSHUT_Pin GPIO_PIN_4
+#define VL53L0X_XSHUT_GPIO_Port GPIOB
+#define VL53L0X_INT_Pin GPIO_PIN_5
+#define VL53L0X_INT_GPIO_Port GPIOB
+#define VL53L0X_INT_EXTI_IRQn EXTI9_5_IRQn
+#define VL53L0X_SCL_Pin GPIO_PIN_6
+#define VL53L0X_SCL_GPIO_Port GPIOB
+#define VL53L0X_SDA_Pin GPIO_PIN_7
+#define VL53L0X_SDA_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

@@ -19,7 +19,7 @@ cmake:
 
 .PHONY: flash
 flash: 
-	STM32_Programmer_CLI -c port=swd -d ${BUILD_DIR}/devcontainer-stm32-cubemx-clean.elf -rst
+	STM32_Programmer_CLI -c port=swd -d ${BUILD_DIR}/devcontainer-stm32-cubemx-vl53l0x.elf -rst
 
 .PHONY: serial
 serial:

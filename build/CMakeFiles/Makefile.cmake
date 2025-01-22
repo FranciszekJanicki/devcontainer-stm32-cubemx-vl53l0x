@@ -7,13 +7,13 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/franek/Documents/STM32/devcontainer-stm32-cubemx-nucleo-l476xx-clean/CMakeLists.txt"
+  "/home/franek/Documents/STM32/devcontainer-stm32-cubemx-vl53l0x/CMakeLists.txt"
   "CMakeFiles/3.28.1/CMakeASMCompiler.cmake"
   "CMakeFiles/3.28.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.28.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.1/CMakeSystem.cmake"
-  "/home/franek/Documents/STM32/devcontainer-stm32-cubemx-nucleo-l476xx-clean/cmake/gcc-arm-none-eabi.cmake"
-  "/home/franek/Documents/STM32/devcontainer-stm32-cubemx-nucleo-l476xx-clean/cmake/stm32cubemx/CMakeLists.txt"
+  "/home/franek/Documents/STM32/devcontainer-stm32-cubemx-vl53l0x/cmake/gcc-arm-none-eabi.cmake"
+  "/home/franek/Documents/STM32/devcontainer-stm32-cubemx-vl53l0x/cmake/stm32cubemx/CMakeLists.txt"
   "/home/franek/st/stm32cubeclt_1.17.0_2/CMake/share/cmake-3.28/Modules/CMakeASMCompiler.cmake.in"
   "/home/franek/st/stm32cubeclt_1.17.0_2/CMake/share/cmake-3.28/Modules/CMakeASMInformation.cmake"
   "/home/franek/st/stm32cubeclt_1.17.0_2/CMake/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in"
@@ -119,5 +119,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/devcontainer-stm32-cubemx-clean.dir/DependInfo.cmake"
+  "CMakeFiles/devcontainer-stm32-cubemx-vl53l0x.dir/DependInfo.cmake"
   )

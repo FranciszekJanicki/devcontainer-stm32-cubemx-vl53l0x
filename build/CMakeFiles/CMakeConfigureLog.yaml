@@ -8,7 +8,7 @@ events:
       - "CMakeLists.txt:21 (enable_language)"
     message: |
       The target system is: Generic -  - arm
-      The host system is: Linux - 6.12.7-arch1-1 - x86_64
+      The host system is: Linux - 6.12.10-arch1-1 - x86_64
   -
     kind: "message-v1"
     backtrace:
@@ -59,7 +59,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
       
       The C compiler identification is GNU, found in:
-        /home/franek/Documents/STM32/devcontainer-stm32-cubemx-nucleo-l476xx-clean/build/CMakeFiles/3.28.1/CompilerIdC/CMakeCCompilerId.o
+        /home/franek/Documents/STM32/devcontainer-stm32-cubemx-vl53l0x/build/CMakeFiles/3.28.1/CompilerIdC/CMakeCCompilerId.o
       
   -
     kind: "message-v1"
@@ -111,7 +111,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
       
       The CXX compiler identification is GNU, found in:
-        /home/franek/Documents/STM32/devcontainer-stm32-cubemx-nucleo-l476xx-clean/build/CMakeFiles/3.28.1/CompilerIdCXX/CMakeCXXCompilerId.o
+        /home/franek/Documents/STM32/devcontainer-stm32-cubemx-vl53l0x/build/CMakeFiles/3.28.1/CompilerIdCXX/CMakeCXXCompilerId.o
       
   -
     kind: "message-v1"
